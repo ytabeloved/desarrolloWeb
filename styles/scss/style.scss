@@ -1,0 +1,466 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+
+/*cambio de color de esquema a
+this https://colorhunt.co/palette/252793
+*/
+
+/*primeras Variables*/
+
+$font-Adidone-h2:'Antic Didone',
+serif;
+$font-OpenSans:"Open Sans",
+sans-serif;
+$width:100%;
+$height:70vh;
+$blackOpaque:rgba(0, 0, 0, 0.6);
+$bigshadow:rgba(0, 0, 0, 0.25) 0px 54px 55px,
+rgba(0, 0, 0, 0.12) 0px -12px 30px,
+rgba(0, 0, 0, 0.12) 0px 4px 6px,
+rgba(0, 0, 0, 0.17) 0px 12px 13px,
+rgba(0, 0, 0, 0.09) 0px -3px 5px;
+$shadowEdge:rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+$lightShadow:rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+$blogShadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+/*probablemente use este esquema asi que lo dejo preparado, pero aun no se*/
+$darkblue:#0a043c;
+$middleBlue:#03506f;
+$lightGreen:#a3ddcb;
+$lightGreenTranslucent:rgba(163, 221, 203, 0.3);
+$lightPink:#ffe3de;
+
+/*colores*/
+:root {
+    --button-color: white;
+    --button-background-color: #03506f;
+}
+
+.btn-primary {
+    color: var(--button-color);
+    background-color: var(--button-background-color);
+    border-radius: var(--border-radius);
+}
+
+.btn-primary:hover {
+    box-shadow: inset 0 0 0 20rem var(--darken-1);
+}
+
+
+/*BEM Modules*/
+/*Header modulo 1*/
+.header {
+
+
+    &__nav {
+        font-family: $font-OpenSans;
+    }
+
+}
+
+/*Carousel modulo 2*/
+.carousel {
+    &__inner {
+        &--img {
+            object-fit: cover;
+            width: $width;
+            height: $height;
+        }
+
+        &--cap {
+            background-color: $blackOpaque;
+            width: $width/3;
+            border-radius: 1%;
+            margin-left: 18%;
+            margin-right: 15%;
+            box-shadow: $bigshadow;
+
+            & h3 {
+                font-family: $font-Adidone-h2;
+                color: white !important;
+                /* blue colors for links too */
+                text-decoration: none;
+            }
+
+            & p {
+                font-family: $font-OpenSans;
+                color: white !important;
+                /* blue colors for links too */
+                text-decoration: none;
+            }
+
+
+
+
+        }
+
+
+
+    }
+}
+
+
+/* .carousel-indicators */
+.carousel__control--next,
+.carousel__control--prev {
+    filter: invert(100%);
+}
+
+/*Banner central modulo 3*/
+/*para que quede en su propio contenedor centrado*/
+.catchPhrase {
+    padding: 5%;
+
+    &__right {
+        text-justify: center;
+
+        &--text {
+            font-family: $font-Adidone-h2;
+        }
+
+    }
+
+    &__left {
+        &--text {
+            font-family: $font-OpenSans;
+
+        }
+    }
+}
+
+
+
+
+
+/*Blog preview modulo 4*/
+.blogReel {
+    padding-bottom: 2%;
+
+    &__card {
+        &--title {
+            font-family: $font-Adidone-h2;
+        }
+
+        &--text {
+            font-family: $font-OpenSans;
+
+        }
+
+        &--img {
+            object-fit: cover;
+        }
+    }
+
+}
+
+
+/*PAGINA NOSOTROS*/
+/*nosotros bloque 5*/
+
+.nosotros {
+    margin-top: 150px;
+
+    &__title {
+        font-family: $font-Adidone-h2;
+    }
+
+    &__text {
+        font-family: $font-OpenSans;
+    }
+}
+
+/*nosotros bloque 6*/
+
+.card-img-top {
+    height: 240px;
+    object-fit: cover;
+    width: $width;
+}
+
+.equipo {
+    margin-top: 2rem;
+    margin-left: 0.3rem;
+
+    &__title {
+        font-family: $font-Adidone-h2;
+    }
+
+}
+
+.blog {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+
+    &__card {
+        &--img {
+            object-fit: cover;
+
+        }
+
+        &--title {
+            font-family: $font-Adidone-h2;
+        }
+
+        &--text {
+            font-family: $font-OpenSans;
+        }
+    }
+}
+
+/*nosotros bloque 7*/
+
+.contactanos {
+    background-color: $lightGreenTranslucent;
+    border-radius: 1%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 2rem;
+    box-shadow: $lightShadow;
+
+    &__title {
+        font-family: $font-Adidone-h2;
+    }
+
+    &__text {
+        font-family: $font-OpenSans;
+    }
+}
+
+/*Footer blpque 8*/
+
+.footer {
+    background-color: $darkblue;
+
+    &__text {
+        font-family: $font-OpenSans;
+        color: white !important;
+
+    }
+}
+
+/*Propiedades bloque 9*/
+
+.content {
+    /*filtros*/
+    margin-top: 10%;
+    overflow: none;
+    font-family: $font-OpenSans;
+}
+
+
+/*Propiedades bloque 10 display propiedades*/
+
+.thumbnail img {
+    height: 250px;
+    width: $width;
+}
+
+.img-thumb-bg {
+    padding: 0;
+    left: 3%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    overflow: hidden;
+    min-height: 260px;
+    position: relative;
+    border-radius: 3px;
+    object-fit: cover;
+
+    & p {
+        color: #fff;
+        margin-bottom: 0;
+        line-height: 16px;
+        font-family: $font-OpenSans;
+    }
+
+    &__overlay {
+
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+        background: rgba(0, 0, 0, 0);
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+        background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #000000 100%);
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, #000000));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+
+
+        &--caption {
+            bottom: -5%;
+            height: 100%;
+            font-family: $font-Adidone-h2;
+            font-size: 12px;
+            position: absolute;
+            padding: 0 10% 10%;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+
+        &--tag a {
+            color: #fff;
+            padding: 0 5px;
+            font-size: 12px;
+            border-radius: 2px;
+            display: inline-block;
+            text-transform: uppercase;
+            background-color: #2980B9;
+        }
+
+        &--title {
+            margin-top: 5px;
+            font-size: 18px;
+            line-height: 20px;
+            text-transform: uppercase;
+            background-color: $blackOpaque;
+            padding-left: 2%;
+            border-radius: 2px;
+        }
+
+        &--title a {
+            color: #fff;
+        }
+
+        &--title a:hover {
+            color: #2980B9;
+        }
+
+        &--meta-data {
+            color: #777;
+            font-size: 12px;
+            line-height: 12px;
+            margin-bottom: 15px;
+        }
+
+        &--meta-data a {
+            color: #777;
+        }
+
+        &--meta-data a .fa {
+            color: #2980B9;
+        }
+
+        &--meta-data a:hover {
+            color: #2980B9;
+        }
+
+        &--caption .content {
+            display: none;
+        }
+    }
+}
+
+.img-thumb-bg:hover .img-thumb-bg__overlay {
+    background: rgba(46, 49, 58, 0.8);
+}
+
+.img-thumb-bg:hover .img-thumb-bg__overlay--caption {
+    bottom: 40%;
+}
+
+.img-thumb-bg:hover .img-thumb-bg__overlay--caption .content {
+    display: block;
+}
+
+
+/*Bloque pagina main blog 11 desafio, loops, operadores y otros*/
+
+
+@mixin respond($breakpoint) {
+    @if($breakpoint==tablet) {
+        @media (max-width: 900px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==phone) {
+        @media (max-width: 600px) {
+            @content
+        }
+    }
+}
+
+.header-bar {
+    height: 120px;
+
+}
+
+@mixin blogMargin($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+
+.blogPost {
+    margin-top: 150px;
+    @include blogMargin(2rem, 0.2rem);
+    box-shadow: $blogShadow;
+
+    &__header {
+        text-align: left;
+        padding-left: 3rem;
+        font-family: $font-Adidone-h2;
+    }
+
+    &__body {
+        font-family: $font-OpenSans;
+        text-align: left;
+        padding-left: 3rem;
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: row;
+
+        @include respond(tablet) {
+            flex-direction: row;
+        }
+
+        @include respond(phone) {
+            flex-direction: column-reverse;
+        }
+
+        &--img {
+            background-color: $darkblue;
+            width: 300px;
+            object-fit: cover;
+            border-radius: 2px;
+
+            @include respond(tablet) {
+                width: 150px;
+                height: 100%;
+            }
+
+            @include respond(phone) {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+
+    &__footer {
+        font-family: $font-OpenSans;
+        padding: 1rem;
+        width: $width;
+        margin: 0px;
+
+        &--date {
+            padding-left: 2rem;
+        }
+
+        &--category {
+            padding-left: 2rem;
+        }
+    }
+}
+
+/*extend*/

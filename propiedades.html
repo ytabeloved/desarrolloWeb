@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Propiedades</title>
+    <meta name="description"
+        content="busca hogares en venta desde Arica a Punta Arenas, usa este buscador para encontrar las mejores propiedades.">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/styles/css/style.css">
+    <meta name="keywords"
+        content="propiedades, realtor, corredora, inmobiliaria, gestion inmobiliaria, casas, departamentos, arriendo, compra venta inmuebles, inmuebles ">
+</head>
+
+<body>
+    <nav class="header shadow navbar navbar-expand-sm bg-light navbar-light fixed-top ">
+        <!-- Brand -->
+        <a class="navbar-brand header__logo" href="index.html"><img src="img/default-logo.png" alt="Logo"
+                style="width:100px;"></a>
+
+        <!-- Links -->
+        <ul class="header__nav navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="propiedades.html">Propiedades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="nosotros.html" id="navbardrop" data-toggle="dropdown">
+                    Nosotros
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="nosotros.html">Nosotros</a>
+                    <a class="dropdown-item" href="nosotros.html#equipo">Equipo</a>
+                    <a class="dropdown-item" href="nosotros.html#contacto">Contactanos</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!--filtros propiedades-->
+    <div class="row content">
+        <aside class="col-sm-4">
+            <p>FILTROS</p>
+
+
+            <div class="card">
+                <article class="card-group-item">
+                    <header class="card-header">
+                        <h6 class="title">TIPO </h6>
+                    </header>
+                    <div class="filter-content">
+                        <div class="card-body">
+                            <form>
+                                <label class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <span class="form-check-label">
+                                        Casa
+                                    </span>
+                                </label> <!-- form-check.// -->
+                                <label class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <span class="form-check-label">
+                                        Departamento
+                                    </span>
+                                </label> <!-- form-check.// -->
+                                <label class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <span class="form-check-label">
+                                        Oficina/Comercial
+                                    </span>
+                                </label> <!-- form-check.// -->
+                            </form>
+
+                        </div> <!-- card-body.// -->
+                    </div>
+                </article> <!-- card-group-item.// -->
+
+                <article class="card-group-item">
+                    <header class="card-header">
+                        <h6 class="title">Elija operación </h6>
+                    </header>
+                    <div class="filter-content">
+                        <div class="card-body">
+                            <label class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadio" value="">
+                                <span class="form-check-label">
+                                    Compra
+                                </span>
+                            </label>
+                            <label class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadio" value="">
+                                <span class="form-check-label">
+                                    Arriendo
+                                </span>
+                            </label>
+                            <label class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadio" value="">
+                                <span class="form-check-label">
+                                    Leasing
+                                </span>
+                            </label>
+                        </div> <!-- card-body.// -->
+                    </div>
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Presupuesto </h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Min</label>
+                                        <input type="number" class="form-control" id="inputEmail4" placeholder="$0">
+                                    </div>
+                                    <div class="form-group col-md-6 text-right">
+                                        <label>Max</label>
+                                        <input type="number" class="form-control" placeholder="$1,0000">
+                                    </div>
+                                </div>
+                            </div> <!-- card-body.// -->
+                        </div>
+                    </article> <!-- card-group-item.// -->
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Comuna </h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <span class="float-right badge badge-light round">52</span>
+                                    <input type="checkbox" class="custom-control-input" id="Check1">
+                                    <label class="custom-control-label" for="Check1">Vitacura</label>
+                                </div> <!-- form-check.// -->
+
+                                <div class="custom-control custom-checkbox">
+                                    <span class="float-right badge badge-light round">132</span>
+                                    <input type="checkbox" class="custom-control-input" id="Check2">
+                                    <label class="custom-control-label" for="Check2">San Miguel</label>
+                                </div> <!-- form-check.// -->
+
+                                <div class="custom-control custom-checkbox">
+                                    <span class="float-right badge badge-light round">17</span>
+                                    <input type="checkbox" class="custom-control-input" id="Check3">
+                                    <label class="custom-control-label" for="Check3">Providencia</label>
+                                </div> <!-- form-check.// -->
+
+                                <div class="custom-control custom-checkbox">
+                                    <span class="float-right badge badge-light round">7</span>
+                                    <input type="checkbox" class="custom-control-input" id="Check4">
+                                    <label class="custom-control-label" for="Check4">San Bernardo</label>
+                                </div> <!-- form-check.// -->
+                            </div> <!-- card-body.// -->
+                        </div>
+                    </article> <!-- card-group-item.// -->
+            </div> <!-- card.// -->
+            <a href="#" class="btn btn-primary btn-block">filtrar / limpiar</a>
+
+        </aside>
+        <div class="row col-sm-8">
+            <div class="col-sm-5 col-md-4">
+                <div class="thumbnail img-thumb-bg"><img src="/img/casa 8.jpg" alt="casa de demo">
+                    <div class="img-thumb-bg__overlay">
+                    </div>
+                    <div class="img-thumb-bg__overlay--caption">
+                        <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
+                        <div class="img-thumb-bg__overlay--title"><a href="#">Gorgeous Ensea House in California</a>
+                        </div>
+                        <div class="img-thumb-bg__overlay--learfix">
+                            <span class="img-thumb-bg__overlay--meta-data">By <a href="">Admin</a>on 29/06/2016</span>
+                            <span class="img-thumb-bg__overlay--meta-data pull-right"><a href=""><i
+                                        class="fa fa-heart-o"></i> 4</a></span>
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nulla porro qui quo
+                                expedita voluptas ab iure dolore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-4">
+                <div class="thumbnail img-thumb-bg"><img src="/img/casa1 (1).jpg" alt="casa de demo">
+                    <div class="img-thumb-bg__overlay"></div>
+                    <div class="img-thumb-bg__overlay--caption">
+                        <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
+                        <div class="img-thumb-bg__overlay--title"><a href="#">Gorgeous Ensea House in California</a>
+                        </div>
+                        <div class="img-thumb-bg__overlay--learfix">
+                            <span class="img-thumb-bg__overlay--meta-data">By <a href="">Admin</a>on 29/06/2016</span>
+                            <span class="img-thumb-bg__overlay--meta-data pull-right"><a href=""><i
+                                        class="fa fa-heart-o"></i> 4</a></span>
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nulla porro qui quo
+                                expedita voluptas ab iure dolore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-4">
+                <div class="thumbnail img-thumb-bg"><img src="/img/casa1 (2).jpg" alt="casa de demo">
+                    <div class="img-thumb-bg__overlay"></div>
+                    <div class="img-thumb-bg__overlay--caption">
+                        <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
+                        <div class="img-thumb-bg__overlay--title"><a href="#">Gorgeous Ensea House in California</a>
+                        </div>
+                        <div class="img-thumb-bg__overlay--learfix">
+                            <span class="img-thumb-bg__overlay--meta-data">By <a href="">Admin</a>on 29/06/2016</span>
+                            <span class="img-thumb-bg__overlay--meta-data pull-right"><a href=""><i
+                                        class="fa fa-heart-o"></i> 4</a></span>
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nulla porro qui quo
+                                expedita voluptas ab iure dolore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-4">
+                <div class="thumbnail img-thumb-bg"><img src="/img/casa1 (3).jpg" alt="casa de demo">
+                    <div class="img-thumb-bg__overlay"></div>
+                    <div class="img-thumb-bg__overlay--caption">
+                        <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
+                        <div class="img-thumb-bg__overlay--title"><a href="#">Gorgeous Ensea House in California</a>
+                        </div>
+                        <div class="img-thumb-bg__overlay--learfix">
+                            <span class="img-thumb-bg__overlay--meta-data">By <a href="">Admin</a>on 29/06/2016</span>
+                            <span class="img-thumb-bg__overlay--meta-data pull-right"><a href=""><i
+                                        class="fa fa-heart-o"></i> 4</a></span>
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nulla porro qui quo
+                                expedita voluptas ab iure dolore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-4">
+                <div class="thumbnail img-thumb-bg"><img src="/img/casa1 (4).jpg" alt="casa de demo">
+                    <div class="img-thumb-bg__overlay"></div>
+                    <div class="img-thumb-bg__overlay--caption">
+                        <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
+                        <div class="img-thumb-bg__overlay--title"><a href="#">Gorgeous Ensea House in California</a>
+                        </div>
+                        <div class="img-thumb-bg__overlay--learfix">
+                            <span class="img-thumb-bg__overlay--meta-data">By <a href="">Admin</a>on 29/06/2016</span>
+                            <span class="img-thumb-bg__overlay--meta-data pull-right"><a href=""><i
+                                        class="fa fa-heart-o"></i> 4</a></span>
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nulla porro qui quo
+                                expedita voluptas ab iure dolore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-4">
+                <div class="thumbnail img-thumb-bg"><img src="/img/casa1 (5).jpg" alt="casa de demo">
+                    <div class="img-thumb-bg__overlay"></div>
+                    <div class="img-thumb-bg__overlay--caption">
+                        <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
+                        <div class="img-thumb-bg__overlay--title"><a href="#">Gorgeous Ensea House in California</a>
+                        </div>
+                        <div class="img-thumb-bg__overlay--learfix">
+                            <span class="img-thumb-bg__overlay--meta-data">By <a href="">Admin</a>on 29/06/2016</span>
+                            <span class="img-thumb-bg__overlay--meta-data pull-right"><a href=""><i
+                                        class="fa fa-heart-o"></i> 4</a></span>
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nulla porro qui quo
+                                expedita voluptas ab iure dolore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-4">
+                <div class="thumbnail img-thumb-bg"><img src="/img/casa1 (6).jpg" alt="casa de demo">
+                    <div class="img-thumb-bg__overlay"></div>
+                    <div class="img-thumb-bg__overlay--caption">
+                        <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
+                        <div class="img-thumb-bg__overlay--title"><a href="#">Gorgeous Ensea House in California</a>
+                        </div>
+                        <div class="img-thumb-bg__overlay--learfix">
+                            <span class="img-thumb-bg__overlay--meta-data">By <a href="">Admin</a>on 29/06/2016</span>
+                            <span class="img-thumb-bg__overlay--meta-data pull-right"><a href=""><i
+                                        class="fa fa-heart-o"></i> 4</a></span>
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nulla porro qui quo
+                                expedita voluptas ab iure dolore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-4">
+                <div class="thumbnail img-thumb-bg"><img src="/img/casa1 (7).jpg" alt="casa de demo">
+                    <div class="img-thumb-bg__overlay"></div>
+                    <div class="img-thumb-bg__overlay--caption">
+                        <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
+                        <div class="img-thumb-bg__overlay--title"><a href="#">Gorgeous Ensea House in California</a>
+                        </div>
+                        <div class="img-thumb-bg__overlay--learfix">
+                            <span class="img-thumb-bg__overlay--meta-data">By <a href="">Admin</a>on 29/06/2016</span>
+                            <span class="img-thumb-bg__overlay--meta-data pull-right"><a href=""><i
+                                        class="fa fa-heart-o"></i> 4</a></span>
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nulla porro qui quo
+                                expedita voluptas ab iure dolore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <footer class="footer shadow-lg footer mt-auto py-3 ">
+        <div class="container">
+            <span class="footer__text text-muted">by Mine2018 ©</span>
+        </div>
+    </footer>
+</body>
+
+</html>

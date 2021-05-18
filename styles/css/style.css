@@ -1,0 +1,373 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Open+Sans:ital,wght@0,300;1,300&display=swap");
+/*cambio de color de esquema a
+this https://colorhunt.co/palette/252793
+*/
+/*primeras Variables*/
+/*probablemente use este esquema asi que lo dejo preparado, pero aun no se*/
+/*colores*/
+:root {
+  --button-color: white;
+  --button-background-color: #03506f;
+}
+
+.btn-primary {
+  color: var(--button-color);
+  background-color: var(--button-background-color);
+  border-radius: var(--border-radius);
+}
+
+.btn-primary:hover {
+  box-shadow: inset 0 0 0 20rem var(--darken-1);
+}
+
+/*BEM Modules*/
+/*Header modulo 1*/
+.header__nav {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*Carousel modulo 2*/
+.carousel__inner--img {
+  object-fit: cover;
+  width: 100%;
+  height: 70vh;
+}
+
+.carousel__inner--cap {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 33.33333%;
+  border-radius: 1%;
+  margin-left: 18%;
+  margin-right: 15%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.carousel__inner--cap h3 {
+  font-family: "Antic Didone", serif;
+  color: white !important;
+  /* blue colors for links too */
+  text-decoration: none;
+}
+
+.carousel__inner--cap p {
+  font-family: "Open Sans", sans-serif;
+  color: white !important;
+  /* blue colors for links too */
+  text-decoration: none;
+}
+
+/* .carousel-indicators */
+.carousel__control--next,
+.carousel__control--prev {
+  filter: invert(100%);
+}
+
+/*Banner central modulo 3*/
+/*para que quede en su propio contenedor centrado*/
+.catchPhrase {
+  padding: 5%;
+}
+
+.catchPhrase__right {
+  text-justify: center;
+}
+
+.catchPhrase__right--text {
+  font-family: "Antic Didone", serif;
+}
+
+.catchPhrase__left--text {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*Blog preview modulo 4*/
+.blogReel {
+  padding-bottom: 2%;
+}
+
+.blogReel__card--title {
+  font-family: "Antic Didone", serif;
+}
+
+.blogReel__card--text {
+  font-family: "Open Sans", sans-serif;
+}
+
+.blogReel__card--img {
+  object-fit: cover;
+}
+
+/*PAGINA NOSOTROS*/
+/*nosotros bloque 5*/
+.nosotros {
+  margin-top: 150px;
+}
+
+.nosotros__title {
+  font-family: "Antic Didone", serif;
+}
+
+.nosotros__text {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*nosotros bloque 6*/
+.card-img-top {
+  height: 240px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.equipo {
+  margin-top: 2rem;
+  margin-left: 0.3rem;
+}
+
+.equipo__title {
+  font-family: "Antic Didone", serif;
+}
+
+.blog {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.blog__card--img {
+  object-fit: cover;
+}
+
+.blog__card--title {
+  font-family: "Antic Didone", serif;
+}
+
+.blog__card--text {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*nosotros bloque 7*/
+.contactanos {
+  background-color: rgba(163, 221, 203, 0.3);
+  border-radius: 1%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.contactanos__title {
+  font-family: "Antic Didone", serif;
+}
+
+.contactanos__text {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*Footer blpque 8*/
+.footer {
+  background-color: #0a043c;
+}
+
+.footer__text {
+  font-family: "Open Sans", sans-serif;
+  color: white !important;
+}
+
+/*Propiedades bloque 9*/
+.content {
+  /*filtros*/
+  margin-top: 10%;
+  overflow: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*Propiedades bloque 10 display propiedades*/
+.thumbnail img {
+  height: 250px;
+  width: 100%;
+}
+
+.img-thumb-bg {
+  padding: 0;
+  left: 3%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  overflow: hidden;
+  min-height: 260px;
+  position: relative;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.img-thumb-bg p {
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.img-thumb-bg__overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #000000 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, #000000));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+}
+
+.img-thumb-bg__overlay--caption {
+  bottom: -5%;
+  height: 100%;
+  font-family: "Antic Didone", serif;
+  font-size: 12px;
+  position: absolute;
+  padding: 0 10% 10%;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-thumb-bg__overlay--tag a {
+  color: #fff;
+  padding: 0 5px;
+  font-size: 12px;
+  border-radius: 2px;
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #2980B9;
+}
+
+.img-thumb-bg__overlay--title {
+  margin-top: 5px;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-left: 2%;
+  border-radius: 2px;
+}
+
+.img-thumb-bg__overlay--title a {
+  color: #fff;
+}
+
+.img-thumb-bg__overlay--title a:hover {
+  color: #2980B9;
+}
+
+.img-thumb-bg__overlay--meta-data {
+  color: #777;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 15px;
+}
+
+.img-thumb-bg__overlay--meta-data a {
+  color: #777;
+}
+
+.img-thumb-bg__overlay--meta-data a .fa {
+  color: #2980B9;
+}
+
+.img-thumb-bg__overlay--meta-data a:hover {
+  color: #2980B9;
+}
+
+.img-thumb-bg__overlay--caption .content {
+  display: none;
+}
+
+.img-thumb-bg:hover .img-thumb-bg__overlay {
+  background: rgba(46, 49, 58, 0.8);
+}
+
+.img-thumb-bg:hover .img-thumb-bg__overlay--caption {
+  bottom: 40%;
+}
+
+.img-thumb-bg:hover .img-thumb-bg__overlay--caption .content {
+  display: block;
+}
+
+/*Bloque pagina main blog 11 desafio, loops, operadores y otros*/
+.header-bar {
+  height: 120px;
+}
+
+.blogPost {
+  margin-top: 150px;
+  margin: 2rem;
+  padding: 0.2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.blogPost__header {
+  text-align: left;
+  padding-left: 3rem;
+  font-family: "Antic Didone", serif;
+}
+
+.blogPost__body {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 900px) {
+  .blogPost__body {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  .blogPost__body {
+    flex-direction: column-reverse;
+  }
+}
+
+.blogPost__body--img {
+  background-color: #0a043c;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+@media (max-width: 900px) {
+  .blogPost__body--img {
+    width: 150px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .blogPost__body--img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.blogPost__footer {
+  font-family: "Open Sans", sans-serif;
+  padding: 1rem;
+  width: 100%;
+  margin: 0px;
+}
+
+.blogPost__footer--date {
+  padding-left: 2rem;
+}
+
+.blogPost__footer--category {
+  padding-left: 2rem;
+}
+
+/*extend*/
+/*# sourceMappingURL=style.css.map */
