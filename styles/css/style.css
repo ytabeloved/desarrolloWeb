@@ -5,6 +5,7 @@ this https://colorhunt.co/palette/252793
 */
 /*primeras Variables*/
 /*probablemente use este esquema asi que lo dejo preparado, pero aun no se*/
+/*mixins*/
 /*colores*/
 :root {
   --button-color: white;
@@ -25,6 +26,48 @@ this https://colorhunt.co/palette/252793
 /*Header modulo 1*/
 .header__nav {
   font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 1000px) {
+  .navbar-expand-lg {
+    display: none;
+  }
+}
+
+.dark-blue-text {
+  color: #0a043c;
+}
+
+@media (max-width: 900px) {
+  .hamb-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .hamb-nav {
+    display: block;
+  }
+}
+
+.hamb-nav .fa-1x {
+  font-size: 1.5rem;
+}
+
+.hamb-nav .navbar-toggler.toggler-example {
+  cursor: pointer;
+}
+
+.hamb-nav .dark-pink-text {
+  color: #AC003A;
+}
+
+.hamb-nav .dark-amber-text {
+  color: #ff6f00;
+}
+
+.hamb-nav .dark-teal-text {
+  color: #004d40;
 }
 
 /*Carousel modulo 2*/

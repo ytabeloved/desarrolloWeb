@@ -33,6 +33,28 @@ $lightGreen:#a3ddcb;
 $lightGreenTranslucent:rgba(163, 221, 203, 0.3);
 $lightPink:#ffe3de;
 
+/*mixins*/
+
+@mixin respond($breakpoint) {
+    @if($breakpoint==tablet) {
+        @media (max-width: 900px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==phone) {
+        @media (max-width: 600px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==bgtablet) {
+        @media (max-width: 1000px) {
+            @content
+        }
+    }
+}
+
 /*colores*/
 :root {
     --button-color: white;
@@ -54,12 +76,54 @@ $lightPink:#ffe3de;
 /*Header modulo 1*/
 .header {
 
-
     &__nav {
         font-family: $font-OpenSans;
     }
 
 }
+
+.navbar-expand-lg{
+    @include respond(bgtablet) {
+        display: none;
+    }
+
+}
+
+.dark-blue-text {
+    color: $darkblue;
+}
+
+.hamb-nav {
+     @include respond(tablet) {
+        display: block;
+    }
+
+    @include respond(phone) {
+        display: block;
+    }
+
+    .fa-1x {
+        font-size: 1.5rem;
+    }
+
+    .navbar-toggler.toggler-example {
+        cursor: pointer;
+    }
+
+    .dark-pink-text {
+        color: #AC003A;
+    }
+
+    .dark-amber-text {
+        color: #ff6f00;
+    }
+
+    .dark-teal-text {
+        color: #004d40;
+    }
+
+}
+
 
 /*Carousel modulo 2*/
 .carousel {
@@ -234,33 +298,34 @@ $lightPink:#ffe3de;
 
 .footer {
     background-color: $darkblue;
-    margin:0px;
+    margin: 0px;
 
     &__text {
         font-family: $font-OpenSans;
         color: white !important;
-        &--img{
-            max-height:40px;
+
+        &--img {
+            max-height: 40px;
         }
 
     }
 
-    &__feet{
-        margin:0px;
-       /* display:flex;
+    &__feet {
+        margin: 0px;
+        /* display:flex;
         flex-direction: row;*/
-       
-        
-        &--nav{
-            width:100%;
-           
+
+
+        &--nav {
+            width: 100%;
+
         }
     }
 
 
 }
 
-.signature{
+.signature {
     font-size: 12px;
 }
 
@@ -398,19 +463,7 @@ $lightPink:#ffe3de;
 /*Bloque pagina main blog 11 desafio, loops, operadores y otros*/
 
 
-@mixin respond($breakpoint) {
-    @if($breakpoint==tablet) {
-        @media (max-width: 900px) {
-            @content
-        }
-    }
 
-    @if($breakpoint==phone) {
-        @media (max-width: 600px) {
-            @content
-        }
-    }
-}
 
 .header-bar {
     height: 120px;
@@ -489,8 +542,8 @@ $lightPink:#ffe3de;
 
 /*sitemap*/
 
-.sitemap{
+.sitemap {
     margin-top: 150px;
-    height:70vh;
+    height: 70vh;
 
 }
