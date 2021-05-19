@@ -234,12 +234,34 @@ $lightPink:#ffe3de;
 
 .footer {
     background-color: $darkblue;
+    margin:0px;
 
     &__text {
         font-family: $font-OpenSans;
         color: white !important;
+        &--img{
+            max-height:40px;
+        }
 
     }
+
+    &__feet{
+        margin:0px;
+       /* display:flex;
+        flex-direction: row;*/
+       
+        
+        &--nav{
+            width:100%;
+           
+        }
+    }
+
+
+}
+
+.signature{
+    font-size: 12px;
 }
 
 /*Propiedades bloque 9*/
@@ -463,4 +485,12 @@ $lightPink:#ffe3de;
     }
 }
 
-/*extend*/
+/*SEO ADDONS*/
+
+/*sitemap*/
+
+.sitemap{
+    margin-top: 150px;
+    height:70vh;
+
+}

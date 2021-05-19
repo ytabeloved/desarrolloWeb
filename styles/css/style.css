@@ -167,11 +167,30 @@ this https://colorhunt.co/palette/252793
 /*Footer blpque 8*/
 .footer {
   background-color: #0a043c;
+  margin: 0px;
 }
 
 .footer__text {
   font-family: "Open Sans", sans-serif;
   color: white !important;
+}
+
+.footer__text--img {
+  max-height: 40px;
+}
+
+.footer__feet {
+  margin: 0px;
+  /* display:flex;
+        flex-direction: row;*/
+}
+
+.footer__feet--nav {
+  width: 100%;
+}
+
+.signature {
+  font-size: 12px;
 }
 
 /*Propiedades bloque 9*/
@@ -369,5 +388,10 @@ this https://colorhunt.co/palette/252793
   padding-left: 2rem;
 }
 
-/*extend*/
+/*SEO ADDONS*/
+/*sitemap*/
+.sitemap {
+  margin-top: 150px;
+  height: 70vh;
+}
 /*# sourceMappingURL=style.css.map */
