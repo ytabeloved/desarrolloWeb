@@ -1,0 +1,27 @@
+/*mixins*/
+/*breakpoints pantallas*/
+@mixin respond($breakpoint) {
+    @if($breakpoint==tablet) {
+        @media (max-width: 900px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==phone) {
+        @media (max-width: 600px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==bgtablet) {
+        @media (max-width: 1000px) {
+            @content
+        }
+    }
+}
+
+
+@mixin blogMargin($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}

@@ -1,88 +1,21 @@
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
-
+@import "variables";
+@import "mixins";
 
 /*cambio de color de esquema a
 this https://colorhunt.co/palette/252793
 */
-
-/*primeras Variables*/
-
-$font-Adidone-h2:'Antic Didone',
-serif;
-$font-OpenSans:"Open Sans",
-sans-serif;
-$width:100%;
-$height:70vh;
-$blackOpaque:rgba(0, 0, 0, 0.6);
-$bigshadow:rgba(0, 0, 0, 0.25) 0px 54px 55px,
-rgba(0, 0, 0, 0.12) 0px -12px 30px,
-rgba(0, 0, 0, 0.12) 0px 4px 6px,
-rgba(0, 0, 0, 0.17) 0px 12px 13px,
-rgba(0, 0, 0, 0.09) 0px -3px 5px;
-$shadowEdge:rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-$lightShadow:rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-$blogShadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
-/*probablemente use este esquema asi que lo dejo preparado, pero aun no se*/
-$darkblue:#0a043c;
-$middleBlue:#03506f;
-$lightGreen:#a3ddcb;
-$lightGreenTranslucent:rgba(163, 221, 203, 0.3);
-$lightPink:#ffe3de;
-
-/*mixins*/
-
-@mixin respond($breakpoint) {
-    @if($breakpoint==tablet) {
-        @media (max-width: 900px) {
-            @content
-        }
-    }
-
-    @if($breakpoint==phone) {
-        @media (max-width: 600px) {
-            @content
-        }
-    }
-
-    @if($breakpoint==bgtablet) {
-        @media (max-width: 1000px) {
-            @content
-        }
-    }
-}
-
-/*colores*/
-:root {
-    --button-color: white;
-    --button-background-color: #03506f;
-}
-
-.btn-primary {
-    color: var(--button-color);
-    background-color: var(--button-background-color);
-    border-radius: var(--border-radius);
-}
-
-.btn-primary:hover {
-    box-shadow: inset 0 0 0 20rem var(--darken-1);
-}
-
-
 /*BEM Modules*/
 /*Header modulo 1*/
 .header {
-
     &__nav {
         font-family: $font-OpenSans;
     }
 
 }
 
-.navbar-expand-lg{
+.navbar-expand-lg {
     @include respond(bgtablet) {
         display: none;
     }
@@ -93,13 +26,36 @@ $lightPink:#ffe3de;
     color: $darkblue;
 }
 
+.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger6.svg?color=000');
+}
+
 .hamb-nav {
-     @include respond(tablet) {
+    display: none;
+    margin-right: auto;
+
+    @include respond(bgtablet) {
         display: block;
+        position: sticky;
+        top: 0px;
+        z-index: 99999;
+
+    }
+
+    @include respond(tablet) {
+        display: block;
+        position: sticky;
+        top: 0px;
+        z-index: 99999;
+
     }
 
     @include respond(phone) {
         display: block;
+        position: sticky;
+        top: 0px;
+        z-index: 9999;
+        
     }
 
     .fa-1x {
@@ -110,17 +66,7 @@ $lightPink:#ffe3de;
         cursor: pointer;
     }
 
-    .dark-pink-text {
-        color: #AC003A;
-    }
 
-    .dark-amber-text {
-        color: #ff6f00;
-    }
-
-    .dark-teal-text {
-        color: #004d40;
-    }
 
 }
 
@@ -135,6 +81,12 @@ $lightPink:#ffe3de;
         }
 
         &--cap {
+            @include respond(phone) {
+                max-height: 80%;
+                overflow: hidden;
+
+            }
+
             background-color: $blackOpaque;
             width: $width/3;
             border-radius: 1%;
@@ -226,6 +178,18 @@ $lightPink:#ffe3de;
 
 .nosotros {
     margin-top: 150px;
+
+    @include respond(phone) {
+        margin-top: 40px;
+    }
+
+    @include respond(tablet) {
+        margin-top: 40px;
+    }
+
+    @include respond(bgtablet) {
+        margin-top: 40px;
+    }
 
     &__title {
         font-family: $font-Adidone-h2;
@@ -401,7 +365,7 @@ $lightPink:#ffe3de;
             border-radius: 2px;
             display: inline-block;
             text-transform: uppercase;
-            background-color: #2980B9;
+            background-color: $cardBlue;
         }
 
         &--title {
@@ -419,7 +383,7 @@ $lightPink:#ffe3de;
         }
 
         &--title a:hover {
-            color: #2980B9;
+            color: $cardBlue;
         }
 
         &--meta-data {
@@ -434,11 +398,11 @@ $lightPink:#ffe3de;
         }
 
         &--meta-data a .fa {
-            color: #2980B9;
+            color: $cardBlue;
         }
 
         &--meta-data a:hover {
-            color: #2980B9;
+            color: $cardBlue;
         }
 
         &--caption .content {
@@ -448,7 +412,7 @@ $lightPink:#ffe3de;
 }
 
 .img-thumb-bg:hover .img-thumb-bg__overlay {
-    background: rgba(46, 49, 58, 0.8);
+    background: $blueGray;
 }
 
 .img-thumb-bg:hover .img-thumb-bg__overlay--caption {
@@ -462,19 +426,19 @@ $lightPink:#ffe3de;
 
 /*Bloque pagina main blog 11 desafio, loops, operadores y otros*/
 
-
-
-
 .header-bar {
-    height: 120px;
+    height: 80px;
+    @include respond (phone){
+        height: 0px;
+    }
+    @include respond (tablet){
+        height: 0px;
+    }
+    @include respond (bgtablet){
+        height: 0px;
+    }
 
 }
-
-@mixin blogMargin($margin, $padding) {
-    margin: $margin;
-    padding: $padding;
-}
-
 
 .blogPost {
     margin-top: 150px;
@@ -510,7 +474,7 @@ $lightPink:#ffe3de;
             border-radius: 2px;
 
             @include respond(tablet) {
-                width: 150px;
+                width: 50%;
                 height: 100%;
             }
 
