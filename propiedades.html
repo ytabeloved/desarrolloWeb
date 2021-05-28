@@ -18,12 +18,13 @@
 </head>
 
 <body>
-    <nav class="header shadow navbar navbar-expand-sm bg-light navbar-light fixed-top ">
+    <nav class="header shadow navbar navbar-expand-lg bg-light navbar-light fixed-top >
         <!-- Brand -->
-        <a class="navbar-brand header__logo" href="index.html"><img src="img/default-logo.png" alt="Logo"
-                style="width:100px;"></a>
+        <a class=" navbar-brand header__logo" href="index.html"><img src="img/default-logo.png" alt="Logo"
+            style="width:100px;"></a>
 
         <!-- Links -->
+
         <ul class="header__nav navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="propiedades.html">Propiedades</a>
@@ -44,14 +45,53 @@
                 </div>
             </li>
         </ul>
+
     </nav>
+    <!--Navbar hamburguesa-->
+    <nav class="navbar shadow navbar-light bg-light lighten-4 hamb-nav ml-auto ">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand header__logo" href="index.html"><img src="img/default-logo.png" alt="Logo"
+                style="width:100px;"></a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i
+                    class="fas fa-bars fa-1x"></i></span></button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+            <!-- Links -->
+            <ul class="header__nav navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="propiedades.html">Propiedades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+            <!-- Links -->
+
+        </div>
+        <!-- Collapsible content -->
+
+    </nav>
+    <!--/.Navbar-->
     <!--filtros propiedades-->
     <div class="row content">
-        <aside class="col-sm-4">
+        <aside class="col-sm-4 filtros">
             <p>FILTROS</p>
 
 
-            <div class="card">
+            <div class="card filtros__block">
                 <article class="card-group-item">
                     <header class="card-header">
                         <h6 class="title">TIPO </h6>
@@ -160,13 +200,14 @@
                             </div> <!-- card-body.// -->
                         </div>
                     </article> <!-- card-group-item.// -->
+                    <a href="#" class="btn btn-primary btn-block">filtrar / limpiar</a>
             </div> <!-- card.// -->
-            <a href="#" class="btn btn-primary btn-block">filtrar / limpiar</a>
-
+            
+<!--fin de filtros-->
         </aside>
         <div class="row col-sm-8">
-            <div class="col-sm-5 col-md-4">
-                <div class="thumbnail img-thumb-bg"><img src="/img/casa 8.jpg" alt="casa de demo">
+            <div class="col-sm-5 col-md-4 ">
+                <div class="thumbnail img-thumb-bg PropertyCard"><img src="/img/casa 8.jpg" alt="casa de demo">
                     <div class="img-thumb-bg__overlay">
                     </div>
                     <div class="img-thumb-bg__overlay--caption">
@@ -185,8 +226,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5 col-md-4">
-                <div class="thumbnail img-thumb-bg"><img src="/img/casa1 (1).jpg" alt="casa de demo">
+            <div class="col-sm-5 col-md-4 ">
+                <div class="thumbnail img-thumb-bg PropertyCard"><img src="/img/casa1 (1).jpg" alt="casa de demo">
                     <div class="img-thumb-bg__overlay"></div>
                     <div class="img-thumb-bg__overlay--caption">
                         <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
@@ -204,8 +245,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5 col-md-4">
-                <div class="thumbnail img-thumb-bg"><img src="/img/casa1 (2).jpg" alt="casa de demo">
+            <div class="col-sm-5 col-md-4 ">
+                <div class="thumbnail img-thumb-bg PropertyCard"><img src="/img/casa1 (2).jpg" alt="casa de demo">
                     <div class="img-thumb-bg__overlay"></div>
                     <div class="img-thumb-bg__overlay--caption">
                         <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
@@ -223,8 +264,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5 col-md-4">
-                <div class="thumbnail img-thumb-bg"><img src="/img/casa1 (3).jpg" alt="casa de demo">
+            <div class="col-sm-5 col-md-4 ">
+                <div class="thumbnail img-thumb-bg PropertyCard"><img src="/img/casa1 (3).jpg" alt="casa de demo">
                     <div class="img-thumb-bg__overlay"></div>
                     <div class="img-thumb-bg__overlay--caption">
                         <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
@@ -242,8 +283,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5 col-md-4">
-                <div class="thumbnail img-thumb-bg"><img src="/img/casa1 (4).jpg" alt="casa de demo">
+            <div class="col-sm-5 col-md-4 ">
+                <div class="thumbnail img-thumb-bg PropertyCard"><img src="/img/casa1 (4).jpg" alt="casa de demo">
                     <div class="img-thumb-bg__overlay"></div>
                     <div class="img-thumb-bg__overlay--caption">
                         <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
@@ -261,8 +302,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5 col-md-4">
-                <div class="thumbnail img-thumb-bg"><img src="/img/casa1 (5).jpg" alt="casa de demo">
+            <div class="col-sm-5 col-md-4 ">
+                <div class="thumbnail img-thumb-bg PropertyCard"><img src="/img/casa1 (5).jpg" alt="casa de demo">
                     <div class="img-thumb-bg__overlay"></div>
                     <div class="img-thumb-bg__overlay--caption">
                         <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
@@ -280,8 +321,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5 col-md-4">
-                <div class="thumbnail img-thumb-bg"><img src="/img/casa1 (6).jpg" alt="casa de demo">
+            <div class="col-sm-5 col-md-4 ">
+                <div class="thumbnail img-thumb-bg PropertyCard"><img src="/img/casa1 (6).jpg" alt="casa de demo">
                     <div class="img-thumb-bg__overlay"></div>
                     <div class="img-thumb-bg__overlay--caption">
                         <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
@@ -299,8 +340,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5 col-md-4">
-                <div class="thumbnail img-thumb-bg"><img src="/img/casa1 (7).jpg" alt="casa de demo">
+            <div class="col-sm-5 col-md-4 ">
+                <div class="thumbnail img-thumb-bg PropertyCard"><img src="/img/casa1 (7).jpg" alt="casa de demo">
                     <div class="img-thumb-bg__overlay"></div>
                     <div class="img-thumb-bg__overlay--caption">
                         <div class="img-thumb-bg__overlay--tag"><a href="#">Real Estate</a></div>
@@ -323,15 +364,15 @@
 
     </div>
 
-
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Propiedades</li>
+        </ol>
+    </nav>
 
     <footer class="footer shadow-lg footer mt-auto py-3 ">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Propiedades</li>
-            </ol>
-        </nav>
+
         <div class="container footer__feet row">
             <div class="col-sm-4 footer__text text-muted">
                 <p>siguenos en redes sociales</p>

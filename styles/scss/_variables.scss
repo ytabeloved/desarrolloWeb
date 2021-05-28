@@ -1,0 +1,57 @@
+/*variables*/
+
+/*fonts*/
+$font-Adidone-h2:'Antic Didone',
+serif;
+$font-OpenSans:"Open Sans",
+sans-serif;
+
+/*medidas random*/
+$width:100%;
+$height:70vh;
+$footerMargin:1rem;
+
+/*sombras*/
+$blackOpaque:rgba(0, 0, 0, 0.6);
+$bigshadow:rgba(0, 0, 0, 0.25) 0px 54px 55px,
+rgba(0, 0, 0, 0.12) 0px -12px 30px,
+rgba(0, 0, 0, 0.12) 0px 4px 6px,
+rgba(0, 0, 0, 0.17) 0px 12px 13px,
+rgba(0, 0, 0, 0.09) 0px -3px 5px;
+$shadowEdge:rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+$lightShadow:rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+$blogShadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+/*gradientes*/
+
+$baseheader:rgb(10,4,60);
+$gradientheader:linear-gradient(180deg, rgba(10,4,60,1) 24%, rgba(3,80,111,1) 52%, rgba(163,221,203,1) 92%);
+
+/*colores*/
+$darkblue:#0a043c;
+$middleBlue:#03506f;
+$lightGreen:#a3ddcb;
+$cardBlue:#2980B9;
+$lightGreenTranslucent:rgba(163, 221, 203, 0.3);
+$lightPink:#ffe3de;
+$blueGray:rgba(46, 49, 58, 0.8);
+
+/*colores bootstrap*/
+:root {
+    --button-color: white;
+    --button-background-color: #03506f;
+}
+
+.btn-primary {
+    color: var(--button-color);
+    background-color: var(--button-background-color);
+    border-radius: var(--border-radius);
+}
+
+.btn-primary:hover {
+    box-shadow: inset 0 0 0 20rem var(--darken-1);
+}
