@@ -25,3 +25,13 @@
     margin: $margin;
     padding: $padding;
 }
+
+@keyframes zoom {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1.5, 1.5);
+    }
+}

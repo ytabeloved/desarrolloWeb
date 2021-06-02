@@ -1,5 +1,6 @@
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300');
 @import "variables";
 @import "mixins";
 
@@ -12,12 +13,17 @@ this https://colorhunt.co/palette/252793
     &__nav {
         font-family: $font-OpenSans;
     }
+    &__logo{
+        & img{
+        width:100px;
+        }
+    }
 
 }
 
 .header-color{
-    /*background-color: $baseheader;*/
-    background:$gradientheader;
+    background: $pastelGreen;
+    /*background:$gradientheader;*/
 }
 
 .navbar-expand-lg {
@@ -83,6 +89,7 @@ this https://colorhunt.co/palette/252793
             object-fit: cover;
             width: $width;
             height: $height;
+            animation: zoom 30s;
         }
 
         &--cap {
@@ -140,6 +147,7 @@ this https://colorhunt.co/palette/252793
 
         &--text {
             font-family: $font-Adidone-h2;
+            text-transform: uppercase;
         }
 
     }
@@ -312,13 +320,10 @@ this https://colorhunt.co/palette/252793
     & .card-header{
         background-color: $lightPink;
     }
-    &__block{
-        box-shadow: $bigshadow;
-    }
 }
 
 .PropertyCard{
-    box-shadow: $bigshadow;
+    box-shadow: $lightShadow;
 
 }
 
