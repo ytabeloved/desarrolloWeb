@@ -488,14 +488,20 @@ ul.dashed > li:before {
 }
 .blogPost__body--img {
   background-color: #0a043c;
-  width: 300px;
+  width: 30rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2px;
 }
+@media (max-width: 1000px) {
+  .blogPost__body--img {
+    width: 25rem;
+    height: 100%;
+  }
+}
 @media (max-width: 900px) {
   .blogPost__body--img {
-    width: 50%;
+    width: 40vw;
     height: 100%;
   }
 }
