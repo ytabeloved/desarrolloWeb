@@ -282,7 +282,7 @@ this https://colorhunt.co/palette/252793
         color: white !important;
 
         &--img {
-            max-height: 40px;
+            max-height: 25px;
         }
 
     }
@@ -304,7 +304,39 @@ this https://colorhunt.co/palette/252793
 
 .signature {
     font-size: 12px;
+    padding-top: 5em;
 }
+.foot{
+    &__title{
+        color:$lightGreen;
+        font-family: $font-Adidone-h2;
+        padding-top:1em;
+    }
+
+}
+
+/*sitemap*/
+.sitemap {
+    margin-top: 150px;
+    height: 70vh;
+
+}
+
+ul {
+    margin: 0;
+  }
+  ul.dashed {
+    list-style-type: none;
+  }
+  ul.dashed > li {
+    text-indent: -5px;
+  }
+  ul.dashed > li:before {
+    content: "-";
+    text-indent: -5px;
+    color:$cardBlue;
+  }
+
 
 /*Propiedades*/
 
@@ -531,10 +563,3 @@ this https://colorhunt.co/palette/252793
 
 /*SEO ADDONS*/
 
-/*sitemap*/
-
-.sitemap {
-    margin-top: 150px;
-    height: 70vh;
-
-}
