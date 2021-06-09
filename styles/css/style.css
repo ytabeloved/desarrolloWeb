@@ -106,6 +106,10 @@ this https://colorhunt.co/palette/252793
 .hamb-nav .navbar-toggler.toggler-example {
   cursor: pointer;
 }
+.hamb-nav .hamb-menu {
+  margin-right: 1em;
+  margin-top: 2em;
+}
 
 /*Carousel modulo 2*/
 .carousel__inner--img {

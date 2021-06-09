@@ -47,58 +47,56 @@
 
     </nav>
     <!--Navbar hamburguesa-->
-    <nav class="navbar shadow navbar-light  lighten-4 hamb-nav ml-auto header-color ">
+    <nav class="navbar shadow navbar-light  lighten-4 hamb-nav  header-color container-fluid">
+        <div class="row">
 
-        <!-- Navbar brand -->
-        <a class="navbar-brand header__logo" href="index.html"><img src="img/default-logo.png" alt="Logo"
-                style="width:100px;"></a>
+            <!-- Navbar brand -->
+            <a class="navbar-brand header__logo col-xs-6" href="index.html"><img src="img/default-logo.png"
+                    alt="Logo"></a>
 
-        <!-- Collapse button -->
-        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-            aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i
-                    class="fas fa-bars fa-1x"></i></span></button>
+            <!-- Collapse button -->
+            <div class="ml-auto col-xs-6">
+                <button class="navbar-toggler toggler-example hamb-menu" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i
+                            class="fas fa-bars fa-1x"></i></span></button>
+            </div>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
 
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <!-- Links -->
+                <ul class="header__nav navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="propiedades.html">Propiedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <!-- Links -->
 
-            <!-- Links -->
-            <ul class="header__nav navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="propiedades.html">Propiedades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
-                </li>
-            </ul>
-            <!-- Links -->
-
+            </div>
+            <!-- Collapsible content -->
         </div>
-        <!-- Collapsible content -->
-
     </nav>
     <!--/.Navbar-->
     <div class="col-sm-12 nosotros" id="nosotros">
         <h2 class="nosotros__title">NOSOTROS</h2>
         <P class="nosotros__text">
+            Valdivieso Garcia Inmobiliaria nace en el año 1993, creada y fundada por Maria Eugenia Valdivieso Garcia,
+            quien despues de obtener amplia experiencia
+            trabajando con inmobiliarias y el MOP directamente se dedicaba a la compra y venta de terrenos de uso
+            agricola e industrial, el año 2000 decidio tomar
+            un break por su familia y hoy la re abre con un enfoque en propiedades residenciales.
+            cuenta con certificaciones de Corredores Chile y cursos de tasacion y corretaje que lo ayudaran a cumplir su
+            sueño de la casa propia.
 
-            Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast
-            quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon
-            starboard grog black jack gangway rutters.
-
-            Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a
-            spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry
-            doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.
-
-            Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank
-            crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas
-            boatswain schooner gaff booty Jack Tar transom spirits.-PIRATE IPSUM
         </P>
 
     </div>
@@ -112,11 +110,10 @@
             <div class="card blog__card">
                 <img class="card-img-top" src="img/team (1).jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title blog__card--title">Joaquin Perez</h5>
-                    <p class="card-text blog__card--text">Joaquin Perez, es un agente completamente inventado hasta que
-                        mi mamá me entreghue su equipo real</p>
+                    <h5 class="card-title blog__card--title">Janzen Chacon</h5>
+                    <p class="card-text blog__card--text">Agente de corretaje en area arriendos</p><br>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Más info de Joaquin
+                        Más info de Janzen
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
@@ -124,20 +121,21 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Joaquin Bio</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Bio de Janzen </h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    Aqui irian los logros de Joaquin, si es que;
+                                    Janzen cuenta con amplia experiencia en;
                                     <ul>
-                                        <li>joaquin no fuera imaginario</li>
-                                        <li>Joaquin no fuera una foto sacada de internet</li>
-                                        <li>Joaquin tuviera de echo logros</li>
+                                        <li>Contratos de Arriendos</li>
+                                        <li>Liquidaciones de depositos de garantia</li>
+                                        <li>escrituracion y notarizacion de contratos</li>
                                     </ul>
-                                    Imaginate, Joaquin pudo ser alguien y salir de algun colegio, incluso tal vez pudo
-                                    haber sido agente de inmobiliaria
+                                    Janzen tambien puede orientarte en los pasos para poder juntar la 
+                                    documentacion necesaria para presentar tu carpeta de arrendatario
+                                    contactalo a Janzen@valdiviesogarcia.cl
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -152,13 +150,12 @@
             <div class="card blog__card">
                 <img class="card-img-top" src="img/team (2).jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title blog__card--title">Maria Pinto</h5>
-                    <p class="card-text blog__card--text">noas vamor a poner en el mismo plan, tipo a inventarles una
-                        vida.
+                    <h5 class="card-title blog__card--title">Maria Eugenia Valdivieso Garcia</h5>
+                    <p class="card-text blog__card--text">Dueña y Corredora de Propiedades
                         <br><br>
                     </p>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModa2">
-                        Más info de Maria
+                        Más info de Maria Eugenia
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog"
@@ -166,13 +163,21 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">bio de Maria</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Bio de Maria Eugenia</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    me da una pereza inventarle una vida a Maria, inventasela vos.
+                                    Maria Eugenia cuenta con amplia experiencia en;
+                                    <ul>
+                                        <li>Contratos de Arriendos y Compra Venta</li>
+                                        <li>Liquidaciones de depositos de garantia</li>
+                                        <li>escrituracion y notarizacion de contratos de compra y arriendo</li>
+                                        <li>Tasaciones de propiedades y terrenos</li>
+                                        <li>estudios de informaciones previas</li>
+                                    </ul>
+                                    Puedes contactar a Maria Eugenia en MariaEugencia@valdiviesogarcia.cl
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -188,11 +193,11 @@
             <div class="card blog__card">
                 <img class="card-img-top" src="img/team (3).jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title blog__card--title">Lorena Teamo</h5>
-                    <p class="card-text blog__card--text">Nacio de un meme bien turro aqui en chile <br><br>
+                    <h5 class="card-title blog__card--title">Karla Vergara</h5>
+                    <p class="card-text blog__card--text">Soporte y Pagina Web<br><br>
                     </p>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModa3">
-                        Más info de Lorena
+                        Más info de Karla
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog"
@@ -200,13 +205,14 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabe3">Bio de Lorena</h5>
+                                    <h5 class="modal-title" id="exampleModalLabe3">Bio de Karla</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    ya no se me ocurre nada.
+                                    Karla es quien te puede ayudar si tienes cualquier problema con la plataforma o la pagina,
+                                    puedes contactarla en soporte@valdiviesogarcia.cl
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -225,11 +231,10 @@
         <!--Section heading-->
         <h2 class="contactanos__title h1-responsive font-weight-bold text-center my-4">CONTACTANOS</h2>
         <!--Section description-->
-        <p class="contactanos__text text-center w-responsive mx-auto mb-5">Lorem Ipsum is the single greatest threat. We
-            are not - we are not keeping up with other websites. Lorem Ipsum best not make any more threats to your
-            website. It will be met with fire and fury like the world has never seen. Does everybody know that pig named
-            Lorem Ipsum? An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder
-            text is a fraud.-TRUMP IPSUM</p>
+        <p class="contactanos__text text-center w-responsive mx-auto mb-5">No estas seguro que pasos tomar? no sabes que documentos enviar?
+            quieres cambiarte de casa o vender la tuya y no sabes donde empezar?
+            No importa que duda tengas, si es inmobiliaria nosotros la podemos responder. Habla con nuestros expertos:
+        </p>
 
         <div class="row">
 
@@ -244,7 +249,7 @@
                         <div class="col-md-6">
                             <div class="md-form mb-0">
                                 <input type="text" id="name" name="name" class="form-control">
-                                <label for="name" class="contactanos__text">Your name</label>
+                                <label for="name" class="contactanos__text">Tu Nombre</label>
                             </div>
                         </div>
                         <!--Grid column-->
@@ -253,7 +258,7 @@
                         <div class="col-md-6">
                             <div class="md-form mb-0">
                                 <input type="text" id="email" name="email" class="form-control">
-                                <label for="email" class="contactanos__text">Your email</label>
+                                <label for="email" class="contactanos__text">Tu Correo</label>
                             </div>
                         </div>
                         <!--Grid column-->
@@ -266,7 +271,7 @@
                         <div class="col-md-12">
                             <div class="md-form mb-0">
                                 <input type="text" id="subject" name="subject" class="form-control">
-                                <label for="subject" class="contactanos__text">Subject</label>
+                                <label for="subject" class="contactanos__text">Asunto</label>
                             </div>
                         </div>
                     </div>
@@ -281,7 +286,7 @@
                             <div class="md-form">
                                 <textarea type="text" id="message" name="message" rows="2"
                                     class="contactanos__text form-control md-textarea"></textarea>
-                                <label for="message" class="contactanos__text">Your message</label>
+                                <label for="message" class="contactanos__text">Tu Mensaje</label>
                             </div>
 
                         </div>
@@ -292,7 +297,7 @@
 
                 <div class="text-center text-md-left">
                     <a class="btn btn-primary contactanos__text"
-                        onclick="document.getElementById('contact-form').submit();">Send</a>
+                        onclick="document.getElementById('contact-form').submit();">Enviar</a>
                 </div>
                 <div class="status"></div>
             </div>
@@ -307,11 +312,11 @@
                     </li>
 
                     <li><i class="contactanos__text fas fa-phone mt-4 fa-2x"></i>
-                        <p>+ 01 234 567 89</p>
+                        <p>+56 9 50017125</p>
                     </li>
 
                     <li><i class="contactanos__text fas fa-envelope mt-4 fa-2x"></i>
-                        <p>correo@correo.cl</p>
+                        <p>contacto@valdiviesogarcia.cl</p>
                     </li>
                 </ul>
             </div>
@@ -335,32 +340,32 @@
         <div class="row footer__feet">
             <div class="col-sm-6 ">
                 <h4 class="foot__title">LINKS DEL SITIO</h3>
-                <ul class="dashed">
-                    <li>
-                <a CLASS="text-right footer__feet--nav" href="sitemap.html">Sitemap</a>
-            </li>
-            <li>
-                <a CLASS="text-right footer__feet--nav" href="404.html">Error Page</a>
-            </li>
-            </ul>
+                    <ul class="dashed">
+                        <li>
+                            <a CLASS="text-right footer__feet--nav" href="sitemap.html">Sitemap</a>
+                        </li>
+                        <li>
+                            <a CLASS="text-right footer__feet--nav" href="404.html">Error Page</a>
+                        </li>
+                    </ul>
             </div>
             <div class="col-sm-6">
                 <h4 class="foot__title">ENCUENTRANOS</h3>
-                <p class="footer__text text-muted">siguenos en redes sociales:</p>
-                <a href="#">
-                    <img class="footer__text--img" src="img/Whatsapp_37229.png" alt="icono red social"> Whatsapp
-                </a>
-                <a href="#">
-                    <img class="footer__text--img" src="img/Whatsapp_37229.png" alt="icono red social"> Facebook
-                </a>
-                <a href="#">
-                    <img class="footer__text--img" src="img/Whatsapp_37229.png" alt="icono red social"> Instagram
-                </a>
+                    <p class="footer__text text-muted">siguenos en redes sociales:</p>
+                    <a href="#">
+                        <img class="footer__text--img" src="img/Whatsapp_37229.png" alt="icono red social"> Whatsapp
+                    </a>
+                    <a href="#">
+                        <img class="footer__text--img" src="img/Whatsapp_37229.png" alt="icono red social"> Facebook
+                    </a>
+                    <a href="#">
+                        <img class="footer__text--img" src="img/Whatsapp_37229.png" alt="icono red social"> Instagram
+                    </a>
             </div>
         </div>
         <div class="row justify-content-center">
             <span class="footer__text text-muted signature">by Mine2018 © Registered Brand</span>
-        </div>        
+        </div>
     </footer>
 </body>
 

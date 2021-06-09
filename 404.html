@@ -18,12 +18,12 @@
 </head>
 
 <body>
-    <nav class="header shadow navbar navbar-expand-sm bg-light navbar-light fixed-top ">
+    <nav class="header shadow navbar navbar-expand-lg navbar-light fixed-top header-color">
         <!-- Brand -->
-        <a class="navbar-brand header__logo" href="index.html"><img src="img/default-logo.png" alt="Logo"
-                style="width:100px;"></a>
+        <a class="navbar-brand header__logo" href="index.html"><img src="img/default-logo.png" alt="Logo"></a>
 
         <!-- Links -->
+
         <ul class="header__nav navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="propiedades.html">Propiedades</a>
@@ -44,8 +44,48 @@
                 </div>
             </li>
         </ul>
-    </nav>
 
+    </nav>
+    <!--Navbar hamburguesa-->
+    <nav class="navbar shadow navbar-light  lighten-4 hamb-nav  header-color container-fluid">
+        <div class="row">
+
+            <!-- Navbar brand -->
+            <a class="navbar-brand header__logo col-xs-6" href="index.html"><img src="img/default-logo.png"
+                    alt="Logo"></a>
+
+            <!-- Collapse button -->
+            <div class="ml-auto col-xs-6">
+                <button class="navbar-toggler toggler-example hamb-menu" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i
+                            class="fas fa-bars fa-1x"></i></span></button>
+            </div>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+                <!-- Links -->
+                <ul class="header__nav navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="propiedades.html">Propiedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <!-- Links -->
+
+            </div>
+            <!-- Collapsible content -->
+        </div>
+    </nav>
+    <!--/.Navbar-->
     <div class="container sitemap">
         <div class="jumbotron">
             <h1 class="display-4">ERROR 404, Pagina no encontrada</h1>

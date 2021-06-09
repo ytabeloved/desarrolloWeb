@@ -47,41 +47,43 @@
 
     </nav>
     <!--Navbar hamburguesa-->
-    <nav class="navbar shadow navbar-light  lighten-4 hamb-nav ml-auto header-color ">
+    <nav class="navbar shadow navbar-light  lighten-4 hamb-nav  header-color container-fluid">
+        <div class="row">
 
-        <!-- Navbar brand -->
-        <a class="navbar-brand header__logo" href="index.html"><img src="img/default-logo.png" alt="Logo"
-                style="width:100px;"></a>
+            <!-- Navbar brand -->
+            <a class="navbar-brand header__logo col-xs-6" href="index.html"><img src="img/default-logo.png"
+                    alt="Logo"></a>
 
-        <!-- Collapse button -->
-        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-            aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i
-                    class="fas fa-bars fa-1x"></i></span></button>
+            <!-- Collapse button -->
+            <div class="ml-auto col-xs-6">
+                <button class="navbar-toggler toggler-example hamb-menu" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i
+                            class="fas fa-bars fa-1x"></i></span></button>
+            </div>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
 
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <!-- Links -->
+                <ul class="header__nav navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="propiedades.html">Propiedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <!-- Links -->
 
-            <!-- Links -->
-            <ul class="header__nav navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="propiedades.html">Propiedades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
-                </li>
-            </ul>
-            <!-- Links -->
-
+            </div>
+            <!-- Collapsible content -->
         </div>
-        <!-- Collapsible content -->
-
     </nav>
     <!--/.Navbar-->
 
@@ -153,8 +155,8 @@
             <p class="catchPhrase__left--text">Exclusivos adornos en cada puerta, con amplios jardines, y
                 estacionamientos amplios,
                 cercano a colegios,
-                supermercados y farmacias, la mejor conectividad....
-                seguir leyendo
+                supermercados y farmacias, la mejor conectividad en todas nuestras
+                propiedades.
             </p>
         </div>
     </div>
@@ -220,35 +222,34 @@
         <div class="row footer__feet">
             <div class="col-sm-6 ">
                 <h4 class="foot__title">LINKS DEL SITIO</h3>
-                <ul class="dashed">
-                    <li>
-                <a CLASS="text-right footer__feet--nav" href="sitemap.html">Sitemap</a>
-            </li>
-            <li>
-                <a CLASS="text-right footer__feet--nav" href="404.html">Error Page</a>
-            </li>
-            </ul>
+                    <ul class="dashed">
+                        <li>
+                            <a CLASS="text-right footer__feet--nav" href="sitemap.html">Sitemap</a>
+                        </li>
+                        <li>
+                            <a CLASS="text-right footer__feet--nav" href="404.html">Error Page</a>
+                        </li>
+                    </ul>
             </div>
             <div class="col-sm-6">
                 <h4 class="foot__title">ENCUENTRANOS</h3>
-                <p class="footer__text text-muted">siguenos en redes sociales:</p>
-                <a href="#">
-                    <img class="footer__text--img" src="img/Whatsapp_37229.png" alt="icono red social"> Whatsapp
-                </a>
-                <a href="#">
-                    <img class="footer__text--img" src="img/Whatsapp_37229.png" alt="icono red social"> Facebook
-                </a>
-                <a href="#">
-                    <img class="footer__text--img" src="img/Whatsapp_37229.png" alt="icono red social"> Instagram
-                </a>
+                    <p class="footer__text text-muted">siguenos en redes sociales:</p>
+                    <a href="#">
+                        <img class="footer__text--img" src="img/Whatsapp_37229.png" alt="icono red social"> Whatsapp
+                    </a>
+                    <a href="#">
+                        <img class="footer__text--img" src="img/Whatsapp_37229.png" alt="icono red social"> Facebook
+                    </a>
+                    <a href="#">
+                        <img class="footer__text--img" src="img/Whatsapp_37229.png" alt="icono red social"> Instagram
+                    </a>
             </div>
         </div>
         <div class="row justify-content-center">
             <span class="footer__text text-muted signature">by Mine2018 © Registered Brand</span>
-        </div>        
+        </div>
     </footer>
 
 </body>
 
 </html>
-
