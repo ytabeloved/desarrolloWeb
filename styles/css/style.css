@@ -270,6 +270,7 @@ this https://colorhunt.co/palette/252793
 }
 .footer__text--img {
   max-height: 25px;
+  margin-left: 1em;
 }
 .footer__feet {
   margin: 0px;
