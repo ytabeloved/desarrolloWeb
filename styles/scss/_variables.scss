@@ -1,5 +1,7 @@
 /*variables*/
 
+
+
 /*fonts*/
 $font-Adidone-h2:'Antic Didone',
 serif;
@@ -32,27 +34,22 @@ $baseheader:rgb(10,4,60);
 $gradientheader:linear-gradient(180deg, rgba(10,4,60,1) 24%, rgba(3,80,111,1) 52%, rgba(163,221,203,1) 92%);
 
 /*colores*/
+$black:black;
 $darkblue:#0a043c;
 $middleBlue:#03506f;
-$lightGreen:#a3ddcb;
-$pastelGreen:#f6fcfa;
-$cardBlue:#2980B9;
-$lightGreenTranslucent:rgba(163, 221, 203, 0.3);
+$lightGreen:#cccfce;
+$pastelGreen:#f3f3f3;
+$cardBlue:#b95252;
+$lightGreenTranslucent:rgba(211, 212, 212, 0.3);
 $lightPink:#ffe3de;
 $blueGray:rgba(46, 49, 58, 0.8);
 
 /*colores bootstrap*/
 :root {
     --button-color: white;
-    --button-background-color: #03506f;
-}
-
-.btn-primary {
-    color: var(--button-color);
-    background-color: var(--button-background-color);
-    border-radius: var(--border-radius);
-}
-
-.btn-primary:hover {
-    box-shadow: inset 0 0 0 20rem var(--darken-1);
-}
+    --button-background-color: #772309;
+    --button-background-color-2: #c93e14;
+    
+  }
+  
+ 
