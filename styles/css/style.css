@@ -20,27 +20,33 @@
 }
 
 .btn-primary:hover {
-  box-shadow: inset 0 0 0 20rem var(--darken-1);
+  -webkit-box-shadow: inset 0 0 0 20rem var(--darken-1);
+          box-shadow: inset 0 0 0 20rem var(--darken-1);
 }
 
 /*mixins*/
 /*breakpoints pantallas*/
 @-webkit-keyframes zoom {
   from {
-    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
   to {
-    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
   }
 }
 @keyframes zoom {
   from {
-    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
   to {
-    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
   }
 }
+
 /*cambio de color de esquema a
 this https://colorhunt.co/palette/252793
 */
@@ -53,9 +59,11 @@ this https://colorhunt.co/palette/252793
 .header {
   max-width: 100%;
 }
+
 .header__nav {
   font-family: "Open Sans", sans-serif;
 }
+
 .header__logo img {
   width: 100px;
 }
@@ -83,36 +91,45 @@ this https://colorhunt.co/palette/252793
   display: none;
   margin-right: auto;
 }
+
 @media (max-width: 1000px) {
   .hamb-nav {
     display: block;
+    position: -webkit-sticky;
     position: sticky;
     top: 0px;
     z-index: 99999;
   }
 }
+
 @media (max-width: 900px) {
   .hamb-nav {
     display: block;
+    position: -webkit-sticky;
     position: sticky;
     top: 0px;
     z-index: 99999;
   }
 }
+
 @media (max-width: 600px) {
   .hamb-nav {
     display: block;
+    position: -webkit-sticky;
     position: sticky;
     top: 0px;
     z-index: 9999;
   }
 }
+
 .hamb-nav .fa-1x {
   font-size: 1.5rem;
 }
+
 .hamb-nav .navbar-toggler.toggler-example {
   cursor: pointer;
 }
+
 .hamb-nav .hamb-menu {
   margin-right: 1em;
   margin-top: 2em;
@@ -127,26 +144,31 @@ this https://colorhunt.co/palette/252793
   -webkit-animation: zoom 30s;
           animation: zoom 30s;
 }
+
 .carousel__inner--cap {
   background-color: rgba(0, 0, 0, 0.6);
-  width: 33.3333333333%;
+  width: 33.33333%;
   border-radius: 1%;
   margin-left: 18%;
   margin-right: 15%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 @media (max-width: 600px) {
   .carousel__inner--cap {
     max-height: 80%;
     overflow: hidden;
   }
 }
+
 .carousel__inner--cap h3 {
   font-family: "Antic Didone", serif;
   color: white !important;
   /* blue colors for links too */
   text-decoration: none;
 }
+
 .carousel__inner--cap p {
   font-family: "Open Sans", sans-serif;
   color: white !important;
@@ -157,7 +179,8 @@ this https://colorhunt.co/palette/252793
 /* .carousel-indicators */
 .carousel__control--next,
 .carousel__control--prev {
-  filter: invert(100%);
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 /*Banner central modulo 3*/
@@ -167,14 +190,17 @@ this https://colorhunt.co/palette/252793
   margin-right: 0%;
   margin-left: 0%;
 }
+
 .catchPhrase__right {
   text-justify: center;
   margin-right: 0%;
 }
+
 .catchPhrase__right--text {
   font-family: "Antic Didone", serif;
   text-transform: uppercase;
 }
+
 .catchPhrase__left--text {
   font-family: "Open Sans", sans-serif;
 }
@@ -185,12 +211,15 @@ this https://colorhunt.co/palette/252793
   margin-left: 0%;
   margin-right: 0%;
 }
+
 .blogReel__card--title {
   font-family: "Antic Didone", serif;
 }
+
 .blogReel__card--text {
   font-family: "Open Sans", sans-serif;
 }
+
 .blogReel__card--img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -201,24 +230,29 @@ this https://colorhunt.co/palette/252793
 .nosotros {
   margin-top: 150px;
 }
+
 @media (max-width: 600px) {
   .nosotros {
     margin-top: 40px;
   }
 }
+
 @media (max-width: 900px) {
   .nosotros {
     margin-top: 40px;
   }
 }
+
 @media (max-width: 1000px) {
   .nosotros {
     margin-top: 40px;
   }
 }
+
 .nosotros__title {
   font-family: "Antic Didone", serif;
 }
+
 .nosotros__text {
   font-family: "Open Sans", sans-serif;
 }
@@ -236,6 +270,7 @@ this https://colorhunt.co/palette/252793
   margin-left: 0%;
   margin-right: 0%;
 }
+
 .equipo__title {
   font-family: "Antic Didone", serif;
 }
@@ -244,13 +279,16 @@ this https://colorhunt.co/palette/252793
   margin-left: 0.3rem;
   margin-right: 0.3rem;
 }
+
 .blog__card--img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .blog__card--title {
   font-family: "Antic Didone", serif;
 }
+
 .blog__card--text {
   font-family: "Open Sans", sans-serif;
 }
@@ -263,11 +301,14 @@ this https://colorhunt.co/palette/252793
   margin-right: 1rem;
   margin-top: 1rem;
   padding: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
+
 .contactanos__title {
   font-family: "Antic Didone", serif;
 }
+
 .contactanos__text {
   font-family: "Open Sans", sans-serif;
 }
@@ -277,19 +318,23 @@ this https://colorhunt.co/palette/252793
   background-color: #0a043c;
   margin: 0px;
 }
+
 .footer__text {
   font-family: "Open Sans", sans-serif;
   color: white !important;
 }
+
 .footer__text--img {
   max-height: 25px;
   margin-left: 1em;
 }
+
 .footer__feet {
   margin: 0px;
   /* display:flex;
-  flex-direction: row;*/
+        flex-direction: row;*/
 }
+
 .footer__feet--nav {
   width: 100%;
 }
@@ -342,12 +387,14 @@ ul.dashed > li:before {
 .filtros {
   margin-bottom: 1rem;
 }
+
 .filtros .card-header {
   background-color: #ffe3de;
 }
 
 .PropertyCard {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .thumbnail img {
@@ -367,25 +414,30 @@ ul.dashed > li:before {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .img-thumb-bg p {
   color: #fff;
   margin-bottom: 0;
   line-height: 16px;
   font-family: "Open Sans", sans-serif;
 }
+
 .img-thumb-bg__overlay {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background: rgba(0, 0, 0, 0);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(#000000));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #000000 100%);
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, #000000));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
 }
+
 .img-thumb-bg__overlay--caption {
   bottom: -5%;
   height: 100%;
@@ -393,8 +445,10 @@ ul.dashed > li:before {
   font-size: 12px;
   position: absolute;
   padding: 0 10% 10%;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 .img-thumb-bg__overlay--tag a {
   color: black;
   padding: 0 5px;
@@ -405,8 +459,10 @@ ul.dashed > li:before {
   display: inline-block;
   text-transform: uppercase;
   background-color: #ffe3de;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .img-thumb-bg__overlay--title {
   margin-top: 5px;
   font-size: 18px;
@@ -416,27 +472,34 @@ ul.dashed > li:before {
   padding-left: 2%;
   border-radius: 2px;
 }
+
 .img-thumb-bg__overlay--title a {
   color: #fff;
 }
+
 .img-thumb-bg__overlay--title a:hover {
   color: #2980B9;
 }
+
 .img-thumb-bg__overlay--meta-data {
   color: black;
   font-size: 12px;
   line-height: 12px;
   margin-bottom: 15px;
 }
+
 .img-thumb-bg__overlay--meta-data a {
   color: rgba(46, 49, 58, 0.8);
 }
+
 .img-thumb-bg__overlay--meta-data a .fa {
   color: #2980B9;
 }
+
 .img-thumb-bg__overlay--meta-data a:hover {
   color: #2980B9;
 }
+
 .img-thumb-bg__overlay--caption .content {
   display: none;
 }
@@ -462,16 +525,19 @@ ul.dashed > li:before {
 .header-bar {
   height: 80px;
 }
+
 @media (max-width: 600px) {
   .header-bar {
     height: 0px;
   }
 }
+
 @media (max-width: 900px) {
   .header-bar {
     height: 0px;
   }
 }
+
 @media (max-width: 1000px) {
   .header-bar {
     height: 0px;
@@ -482,31 +548,48 @@ ul.dashed > li:before {
   margin-top: 150px;
   margin: 2rem;
   padding: 0.2rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .blogPost__header {
   text-align: left;
   padding-left: 3rem;
   font-family: "Antic Didone", serif;
 }
+
 .blogPost__body {
   font-family: "Open Sans", sans-serif;
   text-align: left;
   padding-left: 3rem;
   padding-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 @media (max-width: 900px) {
   .blogPost__body {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
+
 @media (max-width: 600px) {
   .blogPost__body {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
+
 .blogPost__body--img {
   background-color: #0a043c;
   width: 30rem;
@@ -514,35 +597,42 @@ ul.dashed > li:before {
      object-fit: cover;
   border-radius: 2px;
 }
+
 @media (max-width: 1000px) {
   .blogPost__body--img {
     width: 25rem;
     height: 100%;
   }
 }
+
 @media (max-width: 900px) {
   .blogPost__body--img {
     width: 40vw;
     height: 100%;
   }
 }
+
 @media (max-width: 600px) {
   .blogPost__body--img {
     width: 100%;
     height: 100%;
   }
 }
+
 .blogPost__footer {
   font-family: "Open Sans", sans-serif;
   padding: 1rem;
   width: 100%;
   margin: 0px;
 }
+
 .blogPost__footer--date {
   padding-left: 2rem;
 }
+
 .blogPost__footer--category {
   padding-left: 2rem;
 }
 
-/*SEO ADDONS*//*# sourceMappingURL=style.css.map */
+/*SEO ADDONS*/
+/*# sourceMappingURL=style.css.map */
